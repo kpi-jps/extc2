@@ -1,0 +1,12 @@
+<div>
+    <label>Nome:
+    <input [(ngModel)]="person.name" placeholder="Nome">
+    </label>
+    <label>Idade:
+    <input [(ngModel)]="person.age" type="number" min="1" step="1" placeholder="Idade">
+    </label>
+    <label>Link para foto:
+    <input [(ngModel)]="person.linkPhoto" type="text" placeholder="Link para foto">
+    </label>
+    <button type="button" (click) = "savePerson()"> Cadastrar </button>
+</div>
